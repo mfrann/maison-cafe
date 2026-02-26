@@ -9,6 +9,7 @@ Landing page de una cafetería ficticia construida con Astro y Tailwind CSS.
 ## 📸 Vista Previa
 
 > Una landing page moderna con menú de bebidas, sección about, contacto y mapa de ubicación.
+![Preview](./public/assets/preview.png)
 
 ---
 
