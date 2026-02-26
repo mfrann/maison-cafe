@@ -1,43 +1,99 @@
-# Astro Starter Kit: Minimal
+# ☕ Maison Café
 
-```sh
-pnpm create astro@latest -- --template minimal
+Landing page de una cafetería ficticia construida con Astro y Tailwind CSS.
+
+🔗 **[Ver demo en vivo](https://maisoncafe.vercel.app)**
+
+---
+
+## 📸 Vista Previa
+
+> Una landing page moderna con menú de bebidas, sección about, contacto y mapa de ubicación.
+
+---
+
+## 🛠️ Tech Stack
+
+![Astro](https://img.shields.io/badge/Astro-black?style=for-the-badge&logo=astro&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-black?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)
+
+---
+
+## ✨ Features
+
+- 🧭 Navbar con scroll suave hacia secciones
+- ☕ Sección de menú completo con precios
+- 📖 Sección "Nosotros" con historia de la cafetería
+- 📍 Sección de ubicación y horarios
+- 📬 Formulario de contacto
+- 📱 Diseño completamente responsive
+
+---
+
+## 🚀 Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/mfrann/maison-cafe.git
+cd maison-cafe
+
+# Instalar dependencias
+pnpm install
+
+# Iniciar servidor de desarrollo
+pnpm dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Abre [http://localhost:4321](http://localhost:4321) en tu navegador.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🧞 Comandos
 
-```text
+| Comando          | Acción                                       |
+| ---------------- | -------------------------------------------- |
+| `pnpm install`   | Instala las dependencias                     |
+| `pnpm dev`       | Inicia el servidor local en `localhost:4321` |
+| `pnpm build`     | Genera el build de producción en `./dist/`   |
+| `pnpm preview`   | Previsualiza el build localmente             |
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
 /
 ├── public/
+│   └── assets/              # Imágenes y recursos estáticos
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── Header.astro     # Navbar principal
+│   │   └── MenuCard.astro   # Tarjeta de ítem del menú
+│   ├── layouts/
+│   │   ├── About.astro      # Sección "Nosotros"
+│   │   ├── Features.astro   # Sección de características
+│   │   ├── Footer.astro     # Pie de página
+│   │   ├── Hero.astro       # Sección principal / hero
+│   │   ├── Map.astro        # Sección de ubicación y contacto
+│   │   └── Menu.astro       # Sección del menú
+│   ├── pages/
+│   │   └── index.astro      # Página principal
+│   └── styles/
+│       └── global.css       # Estilos globales
+├── astro.config.mjs
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📄 Licencia
 
-Any static assets, like images, can be placed in the `public/` directory.
+Este proyecto es de uso educativo y personal.
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<div align="center">
+  Hecho con ☕ por <a href="https://github.com/mfrann">mfrann</a>
+</div>
